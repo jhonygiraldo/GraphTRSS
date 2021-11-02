@@ -36,7 +36,7 @@ If you use our code, please cite
         @inproceedings{giraldo2020minimization,
           title={On the minimization of Sobolev norms of time-varying graph signals: Estimation of new Coronavirus disease 2019 cases},
           author={Giraldo, Jhony H and Bouwmans, Thierry},
-          booktitle={2020 IEEE 30th International Workshop on Machine Learning for Signal Processing (MLSP)},
+          booktitle={IEEE International Workshop on Machine Learning for Signal Processing},
           pages={1--6},
           year={2020},
           organization={IEEE}
