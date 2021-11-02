@@ -24,8 +24,6 @@ Install gspboox.
 - - - -
 ## Citation
 
-~Arif~Mahmood,~Belmar~Garcia-Garcia,~Dorina~Thanou
-
 If you use our code, please cite
 
         @article{giraldo2022graph,
