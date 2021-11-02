@@ -1,5 +1,5 @@
 # Graph Time-varying Signal Reconstruction via Sobolev Smoothness
-Authors: [Jhony H Giraldo](https://sites.google.com/view/jhonygiraldo), [Arif Mahmood](https://itu.edu.pk/faculty-itu/dr-arif-mahmood/), [Dorina Thanou](https://people.epfl.ch/dorina.thanou?lang=en) [Thierry Bouwmans](https://sites.google.com/site/thierrybouwmans/)
+Authors: [Jhony H Giraldo](https://sites.google.com/view/jhonygiraldo), [Arif Mahmood](https://itu.edu.pk/faculty-itu/dr-arif-mahmood/), [Dorina Thanou](https://people.epfl.ch/dorina.thanou?lang=en), and [Thierry Bouwmans](https://sites.google.com/site/thierrybouwmans/)
 - - - -
 ![Pipeline](https://github.com/jhonygiraldo/GraphTRSS/blob/master/doc/pipeline.png)
 - - - -
