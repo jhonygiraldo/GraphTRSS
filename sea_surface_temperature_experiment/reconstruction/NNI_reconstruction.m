@@ -1,0 +1,44 @@
+clear all, close all, clc;
+%%
+addpath('../../functions'); % Path to required functions
+%%
+load('../graph_construction/full_graph.mat');
+load('../sea_surface_temperature.mat');
+x_matrix = Data;
+x_matrix = x_matrix(:,1:600);
+%%
+m = [0.1:0.1:0.9];  %Sampling density
+signals_t = size(x_matrix,2);
+%% Experiments
+repetitions = 100;
+RMSE = zeros(repetitions,length(m));
+MAE = zeros(repetitions,length(m));
+MAPE = zeros(repetitions,length(m));
+for ii=1:repetitions
+    ii
+    for i=1:length(m)
+        num_samples = round(m(i)*G.N);
+        %% Random sampling
+        random_pattern = zeros(signals_t,G.N);
+        for j=1:signals_t
+            random_pattern(j,randperm(G.N,num_samples)) = 1;
+        end
+        SampleMatrix = random_pattern';
+        J = SampleMatrix;
+        Y = J.*(x_matrix);
+        x_recon = solver_NNI(J, Y, Position);
+        indx_non_sampled = find(SampleMatrix(:) == 0);
+        x_vector_original = x_matrix(indx_non_sampled);
+        x_vector_reconstructed = x_recon(indx_non_sampled);
+        RMSE(ii,i) = sqrt(mean((x_vector_original-x_vector_reconstructed).^2));
+        MAE(ii,i) = mean(abs(x_vector_original-x_vector_reconstructed));
+        index_zero = find(x_vector_original == 0);
+        x_vector_original(index_zero) = [];
+        x_vector_reconstructed(index_zero) = [];
+        MAPE(ii,i) = mean(abs((x_vector_original-x_vector_reconstructed)./x_vector_original));
+    end
+end
+%%
+results_path = '../results/';
+mkdir(results_path);
+save([results_path 'error_NNI_random.mat'],'RMSE','MAE','MAPE','m');
