@@ -45,10 +45,10 @@ If you use our code, please cite
 - - - -
 ## References
 
-- This repository builds upon, thus borrows code from [gspbox](https://github.com/epfl-lts2/gspbox) and from the paper "Qiu, K., Mao, X., Shen, X., Wang, X., Li, T., & Gu, Y. (2017). Time-varying graph signal reconstruction. IEEE Journal of Selected Topics in Signal Processing, 11(6), 870-88".
+- This repository builds upon, thus borrows code from [gspbox](https://github.com/epfl-lts2/gspbox) and from the paper "Qiu, K., Mao, X., Shen, X., Wang, X., Li, T., & Gu, Y. (2017). Time-varying graph signal reconstruction. IEEE Journal of Selected Topics in Signal Processing, 11(6), 870-88". Therefore please consider citing the following papers if you use this repository:
+- Qiu, K., Mao, X., Shen, X., Wang, X., Li, T., & Gu, Y. (2017). Time-varying graph signal reconstruction. IEEE Journal of Selected Topics in Signal Processing, 11(6), 870-88
+- Perraudin, N., Paratte, J., Shuman, D., Martin, L., Kalofolias, V., Vandergheynst, P., & Hammond, D. K. (2014). GSPBOX: A toolbox for signal processing on graphs. arXiv preprint arXiv:1408.5781.
 
-- Please consider citing the paper "Qiu, K., Mao, X., Shen, X., Wang, X., Li, T., & Gu, Y. (2017). Time-varying graph signal reconstruction. IEEE Journal of Selected Topics in Signal Processing, 11(6), 870-88" if you use this repository.
-
-- Please also consider citing the two following papers if you use the deterministic sampling methods:
+- We also use code from [Blue-Noise](https://github.com/jhonygiraldo/Blue-Noise-Sampling-on-Graphs) and from the paper "Anis, A., Gadde, A., & Ortega, A. (2016). Efficient sampling set selection for bandlimited graph signals using graph spectral proxies. IEEE Transactions on Signal Processing, 64(14), 3775-3789." for the deterministic sampling methods. Therefore, if you use the codes of deterministic sampling please consider citing the following papers:
 - Parada-Mayorga, A., Lau, D. L., Giraldo, J. H., & Arce, G. R. (2019). Blue-noise sampling on graphs. IEEE Transactions on Signal and Information Processing over Networks, 5(3), 554-569.
 - Anis, A., Gadde, A., & Ortega, A. (2016). Efficient sampling set selection for bandlimited graph signals using graph spectral proxies. IEEE Transactions on Signal Processing, 64(14), 3775-3789.
