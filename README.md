@@ -7,7 +7,7 @@ Authors: [Jhony H Giraldo](https://sites.google.com/view/jhonygiraldo), [Arif Ma
 - - - -
 ## Getting started
 
-This repository is the code released for our paper Graph Time-varying Signal Reconstruction via Sobolev Smoothness. [Journal Paper](https://doi.org/).
+This repository is the code released for our paper Graph Time-varying Signal Reconstruction via Sobolev Smoothness. [Journal Paper](https://doi.org/10.1109/TSIPN.2022.3156886).
 
 #### Installation
 
